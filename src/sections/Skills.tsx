@@ -31,7 +31,7 @@ const Skills: React.FC = () => {
             variants={staggerContainer}
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {Object.entries(skills).map(([category, skillList], index) => (
+            {Object.entries(skills).map(([category, skillList]) => (
               <motion.div
                 key={category}
                 variants={staggerItem}
