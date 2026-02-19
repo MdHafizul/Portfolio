@@ -1,0 +1,9 @@
+# Public Assets Folder
+
+This folder contains public assets for the portfolio website.
+
+## Structure
+- `/images` - Image assets
+  - `/projects` - Project screenshots and demos
+  - `/icons` - Icon assets
+  - `/profile` - Profile and about images

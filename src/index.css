@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary-lighter text-dark font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, #006d77 0%, #83c5be 100%);
+  }
+
+  .animated-gradient {
+    background: linear-gradient(135deg, #edf6f9 0%, #83c5be 40%, #ffddd2 70%, #e29578 100%);
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+  }
+  
+  .hero-mesh {
+    background: radial-gradient(ellipse at top left, #83c5be 0%, transparent 50%),
+                radial-gradient(ellipse at top right, #ffddd2 0%, transparent 50%),
+                radial-gradient(ellipse at bottom, #edf6f9 0%, transparent 50%),
+                linear-gradient(135deg, #edf6f9 0%, rgba(131, 197, 190, 0.3) 100%);
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 lg:py-32;
+  }
+}
