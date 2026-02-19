@@ -10,10 +10,28 @@
 
   html {
     scroll-behavior: smooth;
+    /* Fix for iOS Safari viewport height */
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* iOS Safari fixes */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      min-height: -webkit-fill-available;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold;
+  }
+
+  /* Ensure content is visible even if animations don't trigger */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
 

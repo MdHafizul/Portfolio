@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useScrollReveal } from '../animations/hooks';
 import { staggerContainer, slideUp } from '../animations/variants';
@@ -6,11 +6,21 @@ import quotationInfo from '../data/quotation';
 
 const Quotation: React.FC = () => {
   const scrollReveal = useScrollReveal();
+  const [forceVisible, setForceVisible] = useState(false);
+
+  // Fallback to ensure content is visible on iOS or if animations fail
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setForceVisible(true);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <section id="quotation" className="py-12 md:py-20 bg-white">
       <motion.div
         {...scrollReveal}
+        animate={forceVisible ? 'visible' : undefined}
         variants={staggerContainer}
         className="container mx-auto px-4 md:px-6 max-w-7xl"
       >
