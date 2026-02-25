@@ -53,9 +53,9 @@ export const projects = [
     category: 'Enterprise System',
     status: 'Production',
     metrics: [
-      { label: 'Accounts Processed', value: '300K+' },
-      { label: 'Time Saved', value: '5h → 5min' },
-      { label: 'Dataset Size', value: '700K-1M rows' },
+      { label: 'Accounts Processed', value: '1.5M+' },
+      { label: 'Time Saved', value: '2-3 Days→ 5min' },
+      { label: 'Dataset Size', value: '1M+ rows' },
       { label: 'Query Performance', value: '<1 second' }
     ],
     features: [
@@ -229,18 +229,18 @@ export const benefits = [
 
 export const testimonials = [
   {
-    content: 'Hafizul delivered a robust system that transformed our account management process. His technical expertise and understanding of our business needs were exceptional.',
-    author: 'Operations Manager',
-    company: 'Enterprise Client'
+    content: 'Hafizul system has significantly improved our operational efficiency and data accessibility.',
+    author: 'CRPM Team',
+    company: 'Tenaga Nasional Berhad'
   },
   {
-    content: 'Professional, reliable, and results-driven. The API backend he built became the foundation for our entire product ecosystem.',
-    author: 'Technical Lead',
-    company: 'Tech Startup'
+    content: 'Professional, reliable, and results-driven. The Landing Page he built became the foundation for our investor pitch deck.',
+    author: 'Director',
+    company: 'Ceritha'
   },
   {
     content: 'Exceptional problem-solver who delivers scalable solutions. His work ethic and attention to detail set him apart.',
-    author: 'Product Owner',
+    author: 'Company  Owner',
     company: 'SME Client'
   }
 ];
