@@ -103,36 +103,7 @@ export const projects = [
   }
 ];
 
-export const inDevelopment = [
-  {
-    id: 'unikl-club',
-    title: 'University Club Management System',
-    description: 'Centralized platform for managing university club operations, events, and member activities.',
-    features: [
-      'Club registration & profiles',
-      'Event scheduling & management',
-      'Member tracking & analytics',
-      'Role-based admin dashboards',
-      'Notification system'
-    ],
-    value: 'Streamlines club operations and reduces administrative overhead for student organizations.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Express']
-  },
-  {
-    id: 'thailand-student',
-    title: 'Thailand University Student Management System',
-    description: 'Comprehensive student information management system for academic records and administration.',
-    features: [
-      'Student profile management',
-      'Academic records tracking',
-      'Enrollment system',
-      'Administrative dashboards',
-      'Secure role-based access'
-    ],
-    value: 'Improves operational efficiency and data accessibility for university administration.',
-    tech: ['React', 'Spring Boot', 'PostgreSQL']
-  }
-];
+export const inDevelopment = [];
 
 export const demoProjects = [
   {
