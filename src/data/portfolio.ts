@@ -103,24 +103,62 @@ export const projects = [
   }
 ];
 
-export const inDevelopment = [];
+export const inDevelopment = [
+  {
+    id: 'northace-adventure-video',
+    title: 'North Ace Adventure',
+    subtitle: 'Video Demo',
+    description: 'Showcase walkthrough video for the North Ace Adventure website experience and overall interaction flow.',
+    status: 'Demo Video',
+    video: '/NorthAceAdventure.mp4',
+    tech: ['Web Design', 'Frontend UX', 'Responsive Layout']
+  },
+  {
+    id: 'zulbikechamp-video',
+    title: 'Zulbikechamp',
+    subtitle: 'Video Demo',
+    description: 'Presentation video covering the Zulbikechamp demo build and page structure across sections.',
+    status: 'Demo Video',
+    video: '/Zulbikechamp full.mp4',
+    tech: ['Landing Page', 'Conversion UI', 'Mobile Responsive']
+  }
+];
 
 export const demoProjects = [
   {
-    id: 'zulchamp',
-    title: 'Zulchamp Enterprise',
-    subtitle: 'Motorcycle Towing Service Management',
-    description: 'Complete service management system for motorcycle towing operations including booking, dispatch, and payment tracking.',
-    type: 'video',
-    tech: ['React', 'Node.js', 'MongoDB']
+    id: 'towing-company',
+    title: 'Towing Company',
+    subtitle: 'Roadside Service and Dispatch Demos',
+    description: 'Two towing-focused website demos that showcase emergency call flow, conversion-focused layout, and responsive booking-first UX.',
+    image: '/TowPro.png',
+    sites: [
+      { name: 'TowPro', url: 'https://towpro.netlify.app/', image: '/TowPro.png' },
+      { name: 'Road Rescue Demo', url: 'https://roadrescuedemo.netlify.app/', image: '/RoadRescue.png' }
+    ],
+    tech: ['React', 'TypeScript', 'TailwindCSS']
   },
   {
-    id: 'northace',
-    title: 'NorthAceAdventure',
-    subtitle: 'Hiking Trip CRM System',
-    description: 'Customer relationship and booking management system for hiking tour operations with trip scheduling and client management.',
-    type: 'video',
-    tech: ['React', 'TypeScript', 'Zustand']
+    id: 'printing',
+    title: 'Printing',
+    subtitle: 'Printing Service Landing Demo',
+    description: 'A service-focused printing demo optimized for inquiry generation, showcasing clear offers and conversion-oriented section flow.',
+    image: '/Printing.png',
+    sites: [
+      { name: 'Demo Printing', url: 'https://demoprinting.netlify.app/', image: '/Printing.png' }
+    ],
+    tech: ['HTML', 'CSS', 'Responsive UI']
+  },
+  {
+    id: 'contractor',
+    title: 'Contractor',
+    subtitle: 'Construction and Engineering Demos',
+    description: 'Two contractor website variants built to present services, trust factors, and lead capture flow for project-based businesses.',
+    image: '/nfsbersatu.png',
+    sites: [
+      { name: 'NFS Bersatu', url: 'https://nfsbersatu.netlify.app/', image: '/nfsbersatu.png' },
+      { name: 'Demo Kontraktor', url: 'https://demokontraktor.netlify.app/', image: '/KontratorPro.png' }
+    ],
+    tech: ['React', 'Vite', 'TailwindCSS']
   }
 ];
 
