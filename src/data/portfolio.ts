@@ -66,40 +66,6 @@ export const projects = [
       'Multi-user access control'
     ],
     tech: ['Node.js', 'Express', 'SQL', 'React', 'Excel Automation']
-  },
-  {
-    id: 'ceritha',
-    title: 'Ceritha',
-    subtitle: 'Modern Landing Page Platform',
-    description: 'Premium landing page with smooth animations, responsive design, and live integration capabilities.',
-    category: 'Web Application',
-    status: 'Live',
-    link: 'https://ceritha.netlify.app',
-    features: [
-      'Smooth scroll animations',
-      'Responsive across all devices',
-      'Modern component architecture',
-      'SEO optimized',
-      'Fast load times'
-    ],
-    tech: ['React', 'TailwindCSS', 'Framer Motion', 'Vite']
-  },
-  {
-    id: 'react-landing',
-    title: 'React Landing Page Demo',
-    subtitle: 'Professional Component Library',
-    description: 'Reusable landing page components showcasing modern React patterns and animation techniques.',
-    category: 'Web Application',
-    status: 'Demo',
-    link: 'https://reactdemolandingpage.netlify.app',
-    features: [
-      'Modular component system',
-      'Smooth UI animations',
-      'Modern design patterns',
-      'Fully responsive layout',
-      'Production-ready code'
-    ],
-    tech: ['React', 'TailwindCSS', 'CSS3']
   }
 ];
 
@@ -125,6 +91,28 @@ export const inDevelopment = [
 ];
 
 export const demoProjects = [
+  {
+    id: 'react-landing',
+    title: 'React Landing Page Demo',
+    subtitle: 'Professional Component Library',
+    description: 'Reusable landing page components showcasing modern React patterns and animation techniques.',
+    image: '/dashlydemo.jpeg',
+    sites: [
+      { name: 'React Landing Demo', url: 'https://reactdemolandingpage.netlify.app/', image: '/dashlydemo.jpeg' }
+    ],
+    tech: ['React', 'TailwindCSS', 'CSS3']
+  },
+  {
+    id: 'barber-shop',
+    title: 'Barbershop',
+    subtitle: 'Premium Barbershop Demo',
+    description: 'Elegant barbershop website demo featuring premium positioning, service showcase, and modern design targeting luxury grooming market.',
+    image: '/barber.png',
+    sites: [
+      { name: 'Noble & Blade', url: 'https://barberdemoo.netlify.app/', image: '/barber.png' }
+    ],
+    tech: ['HTML', 'CSS', 'Responsive Design']
+  },
   {
     id: 'towing-company',
     title: 'Towing Company',
