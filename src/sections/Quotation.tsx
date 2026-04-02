@@ -97,7 +97,7 @@ const Quotation: React.FC = () => {
                   <div className="mb-4 md:mb-6">
                     <div className="flex items-baseline gap-2">
                       <span className="text-3xl md:text-4xl lg:text-5xl font-black">
-                        {pkg.id === 'landing-page' ? 'RM 800' : 'RM 2,000+'}
+                        {pkg.id === 'landing-page' ? 'RM 1200' : 'RM 2,000+'}
                       </span>
                       <span className={`text-sm md:text-base lg:text-lg ${pkg.popular ? 'text-white/70' : 'text-gray-500'}`}>
                         {pkg.id === 'landing-page' ? 'one-time' : 'starting'}

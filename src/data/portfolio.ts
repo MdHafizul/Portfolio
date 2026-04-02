@@ -147,6 +147,17 @@ export const demoProjects = [
       { name: 'Demo Kontraktor', url: 'https://demokontraktor.netlify.app/', image: '/KontratorPro.png' }
     ],
     tech: ['React', 'Vite', 'TailwindCSS']
+  },
+  {
+    id: 'mobile-spa',
+    title: 'Mobile Spa',
+    subtitle: 'Women Wellness & Massage Service Demo',
+    description: 'Premium mobile spa website showcasing massage and wellness services with booking flow, service highlights, and luxury positioning.',
+    image: '/MobileSpa.png',
+    sites: [
+      { name: 'Inaz Mobile Spa', url: 'https://inmobilespa.netlify.app/', image: '/MobileSpa.png' }
+    ],
+    tech: ['React', 'TailwindCSS', 'Responsive Design']
   }
 ];
 

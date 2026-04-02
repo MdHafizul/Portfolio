@@ -9,8 +9,8 @@ export const quotationInfo = {
     {
       id: 'landing-page',
       name: 'Package A — Landing Page Development',
-      price: 'RM 800',
-      basePrice: 800,
+      price: 'RM 1200',
+      basePrice: 1200,
       urgentFee: 500,
       description: 'Modern responsive landing page with conversion-focused layout',
       includes: [
