@@ -52,6 +52,7 @@ export const projects = [
     description: 'High-performance internal analytics system for TNB managing Multi-million-row datasets with sub-second query performance.',
     category: 'Enterprise System',
     status: 'Production',
+    link: undefined,
     metrics: [
       { label: 'Accounts Processed', value: '1.5M+' },
       { label: 'Time Saved', value: '2-3 Days→ 5min' },
