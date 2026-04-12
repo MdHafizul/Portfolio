@@ -64,37 +64,37 @@ const InDevelopment: React.FC = () => {
           variants={staggerContainer}
         >
           {/* Demo Projects Header */}
-          <motion.div variants={fadeIn} className="text-center space-y-4 mb-12">
-            <span className="inline-block px-4 py-1.5 bg-purple-100 text-purple-700 text-sm font-semibold rounded-full">
+          <motion.div variants={fadeIn} className="text-center space-y-4 mb-8 sm:mb-12">
+            <span className="inline-block px-4 py-1.5 bg-purple-100 text-purple-700 text-xs sm:text-sm font-semibold rounded-full">
               LIVE DEMOS
             </span>
-            <h2 className="text-3xl md:text-4xl font-black text-primary">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-primary">
               Demo Projects by Category
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
               Each category contains demo website options. You can switch between links and open the one you want to review.
             </p>
           </motion.div>
 
           {/* Video Demos */}
           {videoProjects.length > 0 && (
-            <motion.div variants={staggerContainer} className="mb-14">
-              <motion.div variants={fadeIn} className="text-center space-y-3 mb-8">
-                <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-semibold rounded-full">
+            <motion.div variants={fadeIn} className="mb-10 sm:mb-14">
+              <motion.div className="text-center space-y-3 mb-6 sm:mb-8">
+                <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-xs sm:text-sm font-semibold rounded-full">
                   VIDEO DEMOS
                 </span>
-                <h3 className="text-2xl md:text-3xl font-black text-primary">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-primary">
                   Project Walkthrough Videos
                 </h3>
               </motion.div>
 
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
                 {videoProjects.map((project) => (
                   <motion.article
                     key={project.id}
                     variants={staggerItem}
                     whileHover={{ y: -6 }}
-                    className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100"
+                    className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100"
                   >
                     <div className="aspect-video w-full rounded-lg overflow-hidden border border-primary/20 shadow-lg bg-primary/5">
                       {project.video ? (
@@ -111,20 +111,20 @@ const InDevelopment: React.FC = () => {
                       )}
                     </div>
 
-                    <div className="mt-6 space-y-3">
-                      <div className="flex items-center gap-3">
-                        <span className="px-3 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-700">
+                    <div className="mt-4 sm:mt-6 space-y-2 sm:space-y-3">
+                      <div className="flex items-center gap-2 sm:gap-3">
+                        <span className="px-2 sm:px-3 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-700">
                           {project.status}
                         </span>
                         <span className="text-xs text-gray-500 uppercase tracking-wide">{project.subtitle}</span>
                       </div>
 
-                      <h4 className="text-2xl font-bold text-primary">{project.title}</h4>
-                      <p className="text-gray-700 leading-relaxed">{project.description}</p>
+                      <h4 className="text-xl sm:text-2xl font-bold text-primary">{project.title}</h4>
+                      <p className="text-sm sm:text-base text-gray-700 leading-relaxed">{project.description}</p>
 
-                      <div className="flex flex-wrap gap-2 pt-1">
+                      <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-1">
                         {project.tech.map((tech) => (
-                          <span key={`${project.id}-${tech}`} className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-mono rounded">
+                          <span key={`${project.id}-${tech}`} className="px-2 sm:px-3 py-1 bg-gray-100 text-gray-700 text-xs font-mono rounded">
                             {tech}
                           </span>
                         ))}
@@ -136,26 +136,26 @@ const InDevelopment: React.FC = () => {
             </motion.div>
           )}
 
-          <motion.div variants={fadeIn} className="text-center space-y-3 mb-8">
-            <span className="inline-block px-4 py-1.5 bg-green-100 text-green-700 text-sm font-semibold rounded-full">
+          <motion.div variants={fadeIn} className="text-center space-y-3 mb-6 sm:mb-8">
+            <span className="inline-block px-4 py-1.5 bg-green-100 text-green-700 text-xs sm:text-sm font-semibold rounded-full">
               WEBSITE DEMOS
             </span>
-            <h3 className="text-2xl md:text-3xl font-black text-primary">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-primary">
                Multiple Demo Sites
             </h3>
           </motion.div>
 
           {/* Demo Category Projects */}
           <motion.div 
-            variants={staggerContainer}
-            className="grid md:grid-cols-2 xl:grid-cols-3 gap-8"
+            variants={fadeIn}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8"
           >
             {demoProjects.map((project) => (
               <motion.div
                 key={project.id}
                 variants={staggerItem}
                 whileHover={{ y: -8 }}
-                className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100"
+                className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100"
               >
                 {/* Category Image */}
                 {(() => {
@@ -182,23 +182,23 @@ const InDevelopment: React.FC = () => {
                 })()}
 
                 {/* Content */}
-                <div className="mt-6 space-y-4">
+                <div className="mt-4 sm:mt-6 space-y-3 sm:space-y-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-primary">
+                    <h3 className="text-xl sm:text-2xl font-bold text-primary">
                       {project.title}
                     </h3>
-                    <p className="text-lg text-primary/70 font-semibold">
+                    <p className="text-base sm:text-lg text-primary/70 font-semibold">
                       {project.subtitle}
                     </p>
                   </div>
 
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                     {project.description}
                   </p>
 
                   {/* Clickable Demo Site Selector */}
-                  <div className="space-y-3">
-                    <p className="text-sm font-semibold text-primary/80 uppercase tracking-wide">
+                  <div className="space-y-2 sm:space-y-3">
+                    <p className="text-xs sm:text-sm font-semibold text-primary/80 uppercase tracking-wide">
                       Choose Demo Site
                     </p>
                     <div className="flex flex-wrap gap-2">
@@ -211,7 +211,7 @@ const InDevelopment: React.FC = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => handleSiteSelect(project.id, idx)}
-                            className={`px-3 py-1.5 text-sm font-medium rounded-full border transition-colors ${
+                            className={`px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm font-medium rounded-full border transition-colors min-h-[32px] sm:min-h-[38px] flex items-center justify-center ${
                               isActive
                                 ? 'bg-primary text-white border-primary'
                                 : 'bg-white text-gray-700 border-gray-300 hover:border-primary/40'
@@ -225,11 +225,11 @@ const InDevelopment: React.FC = () => {
                   </div>
 
                   {/* Tech Stack */}
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2">
                     {project.tech.map((tech, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 bg-gray-100 text-gray-700 text-xs font-mono rounded"
+                        className="px-2 sm:px-3 py-1 bg-gray-100 text-gray-700 text-xs font-mono rounded"
                       >
                         {tech}
                       </span>
