@@ -60,11 +60,11 @@ const FeaturedProjects: React.FC = () => {
                 >
                   {project.id === 'cmez-crpm' ? (
                     <div className="relative">
-                      <div className="aspect-video w-full rounded-lg overflow-hidden border border-primary/20 shadow-lg">
+                      <div className="relative w-full rounded-lg overflow-hidden border border-primary/20 shadow-lg" style={{ paddingBottom: '56.25%' }}>
                         <img 
                           src={cmezImages[activeImageIndex['cmez-crpm'] || 0].src}
                           alt={`${project.title} - ${cmezImages[activeImageIndex['cmez-crpm'] || 0].label}`}
-                          className="w-full h-full object-cover transition-opacity duration-300"
+                          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
                         />
                       </div>
                       {/* Image Navigation Dots */}
@@ -89,12 +89,13 @@ const FeaturedProjects: React.FC = () => {
                       href={project.link} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="block aspect-video w-full rounded-lg overflow-hidden border border-primary/20 shadow-lg cursor-pointer group relative"
+                      className="block rounded-lg overflow-hidden border border-primary/20 shadow-lg cursor-pointer group relative"
+                      style={{ paddingBottom: '56.25%' }}
                     >
                       <img 
                         src="/Ceritha.png" 
                         alt={`${project.title} Dashboard`}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                       {/* Click to view overlay */}
                       <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center">
@@ -110,12 +111,13 @@ const FeaturedProjects: React.FC = () => {
                       href={project.link} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="block aspect-video w-full rounded-lg overflow-hidden border border-primary/20 shadow-lg cursor-pointer group relative"
+                      className="block rounded-lg overflow-hidden border border-primary/20 shadow-lg cursor-pointer group relative"
+                      style={{ paddingBottom: '56.25%' }}
                     >
                       <img 
                         src="/DEMO.jpeg" 
                         alt={`${project.title} Dashboard`}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                       {/* Click to view overlay */}
                       <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center">

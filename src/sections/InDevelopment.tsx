@@ -96,19 +96,21 @@ const InDevelopment: React.FC = () => {
                     whileHover={{ y: -6 }}
                     className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm hover:shadow-xl transition-all border border-gray-100"
                   >
-                    <div className="aspect-video w-full rounded-lg overflow-hidden border border-primary/20 shadow-lg bg-primary/5">
-                      {project.video ? (
-                        <video
-                          controls
-                          preload="metadata"
-                          className="w-full h-full object-cover"
-                        >
-                          <source src={project.video} type="video/mp4" />
-                          Your browser does not support the video tag.
-                        </video>
-                      ) : (
-                        <VideoPlaceholder title={project.title} />
-                      )}
+                    <div className="relative w-full bg-primary/5 rounded-lg overflow-hidden border border-primary/20 shadow-lg" style={{ paddingBottom: '56.25%' }}>
+                      <div className="absolute inset-0">
+                        {project.video ? (
+                          <video
+                            controls
+                            preload="metadata"
+                            className="w-full h-full object-cover"
+                          >
+                            <source src={project.video} type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                        ) : (
+                          <VideoPlaceholder title={project.title} />
+                        )}
+                      </div>
                     </div>
 
                     <div className="mt-4 sm:mt-6 space-y-2 sm:space-y-3">
@@ -163,20 +165,22 @@ const InDevelopment: React.FC = () => {
                   const isBroken = previewImage ? brokenImages[previewImage] : false;
 
                   return (
-                <div className="aspect-video w-full rounded-lg overflow-hidden border border-primary/20 shadow-lg">
-                  {previewImage && !isBroken ? (
-                    <img
-                      src={previewImage}
-                      alt={`${project.title} preview`}
-                      className="w-full h-full object-cover"
-                      onError={() => handleImageError(previewImage)}
-                    />
-                  ) : (
-                    <ImagePlaceholder
-                      aspect="video"
-                      label={project.image || `${project.title} image placeholder`}
-                    />
-                  )}
+                <div className="relative w-full bg-primary/5 rounded-lg overflow-hidden border border-primary/20 shadow-lg" style={{ paddingBottom: '56.25%' }}>
+                  <div className="absolute inset-0">
+                    {previewImage && !isBroken ? (
+                      <img
+                        src={previewImage}
+                        alt={`${project.title} preview`}
+                        className="w-full h-full object-cover"
+                        onError={() => handleImageError(previewImage)}
+                      />
+                    ) : (
+                      <ImagePlaceholder
+                        aspect="video"
+                        label={project.image || `${project.title} image placeholder`}
+                      />
+                    )}
+                  </div>
                 </div>
                   );
                 })()}

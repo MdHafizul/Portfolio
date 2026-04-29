@@ -86,7 +86,7 @@ export const inDevelopment = [
     subtitle: 'Video Demo',
     description: 'Presentation video covering the Zulbikechamp demo build and page structure across sections.',
     status: 'Demo Video',
-    video: '/Zulbikechamp full.mp4',
+    video: '/Zulbikechamp-full.mp4',
     tech: ['Landing Page', 'Conversion UI', 'Mobile Responsive']
   }
 ];
