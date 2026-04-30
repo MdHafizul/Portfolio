@@ -58,9 +58,8 @@ const InDevelopment: React.FC = () => {
     <section className="section-padding bg-primary-lighter">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          initial={false}
+          animate="visible"
           variants={staggerContainer}
         >
           {/* Demo Projects Header */}
